@@ -12,28 +12,29 @@ class Array
             Size = length;
             Arr = new int[Size];
         }
-        void Accept()
+
+    void Accept()
+    {
+        cout<<"Enter the valuses"<<endl;
+        for(int i =0;i<Size;i++)
         {
-            cout<<"Enter the values\n";
-            for(int i = 0; i < Size; i++)
-            {
-                cin>>Arr[i];
-            }
+            cin>>Arr[i];
         }
-        void Display()
+    }
+    void Display()
+    {
+        cout<<"Values of array are"<<endl;
+        for(int i =0;i<Size;i++)
         {
-            cout<<"Values of array are\n";
-            for(int i = 0; i < Size; i++)
-            {
-                cout<<Arr[i]<<"\n";
-            }
-        } 
+            cout<<Arr[i]<<endl;
+        }
+    }
 };
 
 int main()
 {
     Array obj1(5);
-    
+
     obj1.Accept();
     obj1.Display();
 
